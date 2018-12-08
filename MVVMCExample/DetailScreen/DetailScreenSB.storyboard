@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail ScreenVC-->
+        <scene sceneID="cQQ-CI-W5r">
+            <objects>
+                <viewController storyboardIdentifier="DetailScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wqE-T8-5mD" customClass="DetailScreenVC" customModule="MVVMCExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mdh-uA-hur">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nZ-p1-I1T">
+                                <rect key="frame" x="16" y="36" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KkX-Io-4gU">
+                                <rect key="frame" x="16" y="60.5" width="343" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U06-kX-VwL" firstAttribute="trailing" secondItem="KkX-Io-4gU" secondAttribute="trailing" constant="16" id="A6U-uJ-G24"/>
+                            <constraint firstItem="KkX-Io-4gU" firstAttribute="top" secondItem="7nZ-p1-I1T" secondAttribute="bottom" constant="4" id="IWW-Oj-NJv"/>
+                            <constraint firstItem="7nZ-p1-I1T" firstAttribute="top" secondItem="U06-kX-VwL" secondAttribute="top" constant="16" id="Krc-kb-7cg"/>
+                            <constraint firstItem="7nZ-p1-I1T" firstAttribute="leading" secondItem="U06-kX-VwL" secondAttribute="leading" constant="16" id="WAP-bL-0om"/>
+                            <constraint firstItem="KkX-Io-4gU" firstAttribute="leading" secondItem="U06-kX-VwL" secondAttribute="leading" constant="16" id="eny-Vz-blW"/>
+                            <constraint firstItem="U06-kX-VwL" firstAttribute="trailing" secondItem="7nZ-p1-I1T" secondAttribute="trailing" constant="16" id="p2e-tv-kPu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U06-kX-VwL"/>
+                    </view>
+                    <connections>
+                        <outlet property="postDetail" destination="KkX-Io-4gU" id="Dvh-0G-AOA"/>
+                        <outlet property="postTitle" destination="7nZ-p1-I1T" id="h9k-sU-yL6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBH-h1-WwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="385" y="-387"/>
+        </scene>
+    </scenes>
+</document>

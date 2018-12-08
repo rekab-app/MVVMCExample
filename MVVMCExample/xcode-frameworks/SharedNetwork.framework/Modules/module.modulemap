@@ -1,0 +1,6 @@
+framework module SharedNetwork {
+    umbrella header "SharedNetwork.h"
+
+    export *
+    module * { export * }
+}
